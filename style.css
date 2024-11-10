@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  color: #000000;
+  background-image: url(bg.jpg);
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  padding: 10px 5%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 130px;
+  margin-top:2%;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 25px;
+  position: relative;
+}
+
+nav ul li a::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: rgb(102, 60, 18);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+  transform: scaleX(0); /* Initially, the underline is hidden */
+  transform-origin: right;
+}
+
+nav ul li a:hover::before {
+  transform: scaleX(1); /* When you hover, the underline expands */
+  transform-origin: left;
+}
+
+.homepage-text h1 {
+  margin-top: 10%;
+  font-size: 60px;
+  color: #000000;
+  font-family: "Comfortaa", sans-serif;
+}
+
+#changing-text {
+  font-size: 60px;
+  color: rgb(102, 60, 18);
+  font-weight: bold;
+}
+
+#myimage {
+  height: 550px;
+  width: 320px;
+  float: right;
+  margin-right: 5%;
+  margin-top: -100px;
+}
+
+#about-heading {
+  font-size: 60px;
+  color: rgb(102, 60, 18);
+  font-weight: 10000;
+}
+
+.about-content{
+  font-size: 25px;
+  color: #000000;
+}
+
+#contact-heading{
+  font-size: 60px;
+  color: rgb(102, 60, 18);
+  font-weight: 10000;
+}
+
+#contact-content{
+  font-size: 25px;
+  color: #000000;
+}
+
+.contact-logo{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+#contact_email {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 10px; /* Add margin to create space */
+}
+
+#contact_email:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+#contact_email {
+  background: linear-gradient(
+      to right,
+      #050d10,
+      #050d10
+    ),
+    linear-gradient(
+      to right,
+      rgb(229, 36, 36),
+      rgb(245, 165, 165),
+      rgb(229, 36, 36)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+#contact_linkedin {
+  text-decoration: none;
+  color: #000000;
+  margin-right: 10px; /* Add margin to create space */
+}
+
+#contact_linkedin:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+#contact_linkedin {
+  background: linear-gradient(
+      to right,
+      #050d10,
+      #050d10
+    ),
+    linear-gradient(
+      to right,
+      rgb(38, 83, 218),
+      rgb(92, 167, 233),
+      rgb(38, 83, 218)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+#contact_github {
+  text-decoration: none;
+  color: #000000;
+  margin-right: 10px; /* Add margin to create space */
+}
+
+#contact_github:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+#contact_github {
+  background: linear-gradient(
+      to right,
+      #050d10,
+      #050d10
+    ),
+    linear-gradient(
+      to right,
+      rgba(128, 150, 214, 0.563),
+      rgb(157, 166, 174),
+      rgba(128, 150, 214, 0.563)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+#contact_insta {
+  text-decoration: none;
+  color: #000000;
+  margin-right: 10px; /* Add margin to create space */
+}
+
+#contact_insta:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+#contact_insta {
+  background: linear-gradient(
+      to right,
+      #050d10,
+      #050d10
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}

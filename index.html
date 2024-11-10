@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cover Crafters</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="logo.png" class="logo" />
+        <ul>
+          <li><a href="index.html"><strong>Home</strong></a></li>
+          <li></li>
+          <li><a href="about.html"><strong>About</strong></a></li>
+          <li></li>
+          <li><a href="contact.html"><strong>Contact</strong></a></li>
+          <li></li>
+        </ul>
+      </nav>
+
+      <div class="homepage-text">
+        <img src="img.jpg" alt="CC" id="myimage" />
+        <h1>
+          Cover Crafters<br />Where Style Meets Perfection<br />
+        </h1>
+        <span id="changing-text"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#changing-text", {
+      strings: ["Apna Cover", "Apna Andaaz"],
+      typeSpeed: 50,
+      loop: true,
+    });
+  </script>
+</body>
+
+</html>
